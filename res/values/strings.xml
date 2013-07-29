@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Beratungsprotokoll</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section0">Übersicht</string>
+    <string name="title_section1">Kunden</string>
+    <string name="title_section2">Protokolle</string>
+    <string name="title_section3">Stammdaten</string>
+    <string name="title_section4">Über..</string>
+    <string name="title_section5">Einstellungen</string>
+    <string name="title_activity_kunden">Kundenübersicht</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_protokolle">ProtokolleActivity</string>
+    <string name="title_activity_stammdaten">StammdatenActivity</string>
+    <string name="title_activity_kunden_ansicht">KundenAnsichtActivity</string>
+
+    <string-array name="rechtsformen_array">
+        
+    </string-array>
+    
+</resources>

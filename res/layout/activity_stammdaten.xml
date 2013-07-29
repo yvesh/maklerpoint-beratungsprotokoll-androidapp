@@ -1,0 +1,226 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StammdatenActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/field_firmenname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Firmenname" >
+
+                <requestFocus />
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/field_zusatz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Zusatz" />
+
+            <Spinner
+                android:id="@+id/spinner_rechtsform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/field_street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Strasse"
+                android:inputType="textPostalAddress" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/field_plz"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:hint="PLZ" />
+
+                <EditText
+                    android:id="@+id/field_ort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Ort" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/field_land"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Land"
+                android:text="Deutschland" />
+
+            <Spinner
+                android:id="@+id/spinner_beratertyp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/field_steuernummer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Steuernummer" />
+
+            <EditText
+                android:id="@+id/field_ustid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="UST-Id" />
+
+            <EditText
+                android:id="@+id/field_vhaftpflicht"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Verm.-Haftpflicht" />
+
+            <CheckBox
+                android:id="@+id/check_beteiligungenVU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beteiligungen an Versicherern" />
+
+            <CheckBox
+                android:id="@+id/check_beteiligungenMAK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beiteiligungen am Makler" />
+
+            <Spinner
+                android:id="@+id/spinner_ihkstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/field_ihkstelle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Zuständige IHK-Stelle" />
+
+            <EditText
+                android:id="@+id/field_ihknummer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="IHK Registriernummer" />
+
+            <EditText
+                android:id="@+id/field_ihkabweichungen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="IHK Abweichungen" />
+
+            <CheckBox
+                android:id="@+id/check_34c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="§34c Vorhanden" />
+
+            <CheckBox
+                android:id="@+id/check_34d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="§34d Vorhanden" />
+
+            <EditText
+                android:id="@+id/field_briefkopf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Briefkopf" />
+
+            <EditText
+                android:id="@+id/field_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Telefon"
+                android:inputType="phone" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/field_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Mobil"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/field_fax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Fax"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/field_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="E-Mail"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/field_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Webseite" />
+
+            <EditText
+                android:id="@+id/field_custom1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Benutzerdefiniert"
+                android:text="Benutzerdefiniert 1" />
+
+            <EditText
+                android:id="@+id/field_custom2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Benutzerdefiniert 2" />
+
+            <EditText
+                android:id="@+id/field_custom3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Benutzerdefiniert 3" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

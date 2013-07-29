@@ -1,0 +1,164 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KundenAnsichtActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/field_kundenNr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Kunden-Nummer" />
+
+            <Spinner
+                android:id="@+id/spinner_anrede"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <AutoCompleteTextView
+                android:id="@+id/field_titel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Titel" />
+
+            <EditText
+                android:id="@+id/field_vorname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Vorname" />
+
+            <EditText
+                android:id="@+id/field_nachname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nachname" />
+
+            <EditText
+                android:id="@+id/field_firma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Firma" />
+
+            <EditText
+                android:id="@+id/field_strasse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Strasse" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/field_kplz"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="PLZ" />
+
+                <EditText
+                    android:id="@+id/field_kort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ort" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/field_kland"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Land"
+                android:text="Deutschland" />
+
+            <EditText
+                android:id="@+id/field_geburtsdatum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Geburtsdatum"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/field_communication1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Telefon"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/field_communication2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Fax" />
+
+            <EditText
+                android:id="@+id/field_communication3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Mobil" >
+
+                <requestFocus />
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/field_communication4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="E-Mail" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/field_kcustom1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Benutzerdefiniert 1" />
+
+            <EditText
+                android:id="@+id/field_kcustom2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Benutzerdefiniert 2" />
+
+            <EditText
+                android:id="@+id/field_kcustom3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Benutzerdefiniert 3" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
